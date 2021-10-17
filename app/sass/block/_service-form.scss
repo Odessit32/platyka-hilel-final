@@ -1,10 +1,25 @@
 .service-form {
+    display: none;
     font-family: "TT Norms", "Times New Roman", serif;
     width: 527px;
-    position: absolute;
-    ////left: 50%;
-    ////top: 50%;
-    background-color: $main-blue;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background-size: cover;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 99999;
+    &::before {
+        content: '';
+        background: $main-blue;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        z-index: 2;
+        transform: translateZ(-10px);
+    }
     &__body {
         background-color: $grey;
         border-radius: 12px;
@@ -47,5 +62,4 @@
         letter-spacing: 1px;
         text-transform: uppercase;
     }
-
 }

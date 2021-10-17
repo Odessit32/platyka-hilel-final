@@ -54,21 +54,21 @@
             text-align: center;
         }
     }
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
         &__box-text {
             max-width: 550px;
         }
     }
-    @media (min-width: 991px) {
+    @media (min-width: 992px) {
         &__list {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
         &__box {
-            display: block;
             width: 50%;
-            align-content: flex-start;
+            //display: inline-block;
+            align-content: center;
         }
         &__box-title {
             padding-top: 0;

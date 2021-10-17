@@ -9,7 +9,7 @@
     &:hover {
         color: $red;
     }
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
         position: relative;
         right: 96px;
         &::after {
@@ -23,7 +23,7 @@
             background-color: $separator;
         }
     }
-    @media (min-width: 991px) {
+    @media (min-width: 992px) {
         right: 25px;
         color: white;
     }

@@ -2,8 +2,8 @@
     padding: 40px 0 29px 0;
     &__box {
         display: grid;
-        grid-template-rows: auto auto auto auto;
-        grid-template-columns: min-content auto auto;
+        grid-template-rows: min-content 320px 26px min-content;
+        grid-template-columns: 60px auto auto;
         background-color: $grey;
         border-radius: 12px;
         padding: 20px 20px 16px 20px;
@@ -45,9 +45,10 @@
         display: block;
         text-decoration: none;
     }
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
         &__box {
             justify-content: center;
+            grid-template-rows: 70px 200px 20px min-content;
         }
         &__title {
             grid-area: 3 / 2 / 4 / 4;
@@ -66,9 +67,10 @@
             text-align: center;
         }
     }
-    @media (min-width: 991px) {
+    @media (min-width: 992px) {
         &__box {
             grid-template-rows: 70px 200px 20px min-content;
+            grid-template-columns: auto auto auto;
             padding: 0;
         }
         &__h3 {
@@ -100,13 +102,13 @@
     }
     @media (min-width: 1200px) {
         padding-top: 71px;
-    }
-    &__box {
-        grid-template-rows: 61px 219px 26px min-content;
-        padding: 0;
-    }
-    &__dots {
-        left: 50%;
-        padding-top: 16px;
+        &__box {
+            grid-template-rows: 61px 219px 26px min-content;
+            padding: 0;
+        }
+        &__dots {
+            left: 50%;
+            padding-top: 16px;
+        }
     }
 }

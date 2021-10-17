@@ -22,5 +22,8 @@
         &::before {
             left: -14px;
         }
+        &_grey {
+            color: $text;
+        }
     }
 }

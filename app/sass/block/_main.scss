@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -20,8 +23,12 @@ input[type="radio"].visually-hidden {
     color: $text;
     margin: 0 auto;
     position: relative;
+    scroll-behavior: smooth;
     &_white {
         color: $white;
+    }
+    &_black {
+        color: $black;
     }
     &__service {
         position: absolute;
@@ -71,7 +78,7 @@ input[type="radio"].visually-hidden {
     min-width: 375px;
     margin: 0 auto;
     padding: 0 20px;
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
         padding: 0 40px;
     }
     @media (min-width: 1200px) {
@@ -83,7 +90,7 @@ input[type="radio"].visually-hidden {
     min-width: 375px;
     margin: 0 auto;
     padding: 0 20px;
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
         padding: 0 40px;
     }
     @media (min-width: 1100px) {
