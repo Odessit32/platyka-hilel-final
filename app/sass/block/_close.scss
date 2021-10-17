@@ -1,0 +1,25 @@
+.close{
+    position: relative;
+    top: 5px;
+    right: 5px;
+    width: 18px;
+    height: 18px;
+    left: 88%;
+    cursor: pointer;
+}
+.close:before,
+.close:after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 10px;
+    width: 18px;
+    height: 4px;
+    background: $red;
+}
+.close:before {
+    transform: rotate(45deg);
+}
+.close:after {
+    transform: rotate(-45deg);
+}

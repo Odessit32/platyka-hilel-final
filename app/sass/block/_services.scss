@@ -1,0 +1,115 @@
+.services {
+    overflow-y: scroll;
+    &__h2-title {
+        padding-bottom: 22px;
+    }
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 42px;
+    }
+    &__box:last-child {
+        padding-bottom: 16px;
+    }
+    &__box-title {
+        max-width: 267px;
+        display: block;
+        text-align: left;
+        font-weight: normal;
+        line-height: 21px;
+        align-items: center;
+        color: $active;
+        padding: 0 0 0 11px;
+        margin: 0;
+    }
+    &__box-title:hover {
+        color: $red;
+    }
+    &__box-text {
+        max-width: 335px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: $white;
+        padding-top: 11px;
+        margin: 0;
+    }
+    a {
+        text-decoration: none;
+        width: 10px;
+        display: block;
+    }
+    @media (min-width: 480px) {
+        &__box {
+            flex-direction: column;
+        }
+        &__box-title {
+            max-width: 367px;
+            text-align: center;
+            padding-top: 10px;
+        }
+        &__box-text {
+            max-width: 430px;
+            text-align: center;
+        }
+    }
+    @media (min-width: 767px) {
+        &__box-text {
+            max-width: 550px;
+        }
+    }
+    @media (min-width: 991px) {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__box {
+            display: block;
+            width: 50%;
+            align-content: flex-start;
+        }
+        &__box-title {
+            padding-top: 0;
+            max-width: 300px;
+            text-align: left;
+        }
+        &__box-text {
+            max-width: 400px;
+            text-align: left;
+        }
+    }
+    @media (min-width: 1200px) {
+        &__list {
+            margin: 0 -20px;
+        }
+        &__h2-title {
+            padding-bottom: 70px;
+        }
+        .services__box {
+            width: 33.333%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 20px;
+        }
+        &__box:first-child {
+            padding-bottom: 86px;
+        }
+        &__box:last-child {
+            padding-bottom: 63px;
+        }
+        &__box-title {
+            max-width: 367px;
+            font-size: 24px;
+            line-height: 28px;
+            padding: 20px 0 5px 0;
+        }
+        &__box-text {
+            max-width: 402px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.h1-title {
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 45px;
+    text-align: center;
+    color: $white;
+    padding-top: 77px;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    &::after {
+        content: url("../img/icons/bg-first-section-mob.svg");
+        position: absolute;
+        top: 38px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+    @media (min-width: 480px) {
+        width: 450px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @media (min-width: 767px) {
+        width: 450px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @media (min-width: 1200px) {
+        padding: 0;
+        &::after {
+            content: url("../img/bg-logo.svg");
+            top: -59px;
+            left: 50%;
+        }
+        &::before {
+            content: url("../img/title-bg.svg");
+            position: absolute;
+            top: -180px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+    }
+}

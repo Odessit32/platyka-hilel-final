@@ -1,0 +1,151 @@
+.footer {
+    position: relative;
+    background-color: $grey;
+    &::before {
+        content: "";
+        position: absolute;
+        border-top: 4px solid $separator;
+        width: calc(100% - 40px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__block {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6, auto);
+        justify-items: center;
+    }
+    &__block-first{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__block-second {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__adress {
+        font-size: 16px;
+        line-height: 19px;
+        color: $main-blue;
+        padding: 22px 0 10px 0;
+        margin: 0;
+    }
+    &__adress-first {
+        font-weight: bold;
+    }
+    &__adress-link {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $active;
+        padding-bottom: 20px;
+        align-self: center;
+    }
+    &__facebook {
+        align-self: center;
+        display: block;
+        margin-bottom: 18px;
+        fill: #24a3ff;
+    }
+    &__facebook:hover {
+        fill: $red;
+    }
+    &__email {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: $active;
+        padding: 20px 0;
+        align-self: center;
+    }
+    &__email:hover,
+    &__adress-link:hover {
+        color: $red;
+    }
+    &__copy {
+        width: 300px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 19px;
+        margin: 0;
+    }
+    @media (min-width: 767px) {
+        &__block-first {
+            display: flex;
+            flex-direction: row;
+            padding-top: 32px;
+        }
+        &__adress {
+            padding: 0 31px 0 0;
+        }
+        &__adress-link {
+            position: relative;
+            padding: 0;
+        }
+        &__adress-link::before {
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            top: 4px;
+            left: -14px;
+            border-radius: 50px;
+            background-color: $separator;
+        }
+        &__block-second {
+            display: flex;
+            flex-direction: row;
+            padding-top: 22px;
+        }
+        &__facebook {
+            margin: 0;
+            margin-right: 50px;
+        }
+        &__phone {
+            position: relative;
+            left: -21px;
+            top: 7px;
+        }
+        &__phone::before {
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            top: 8px;
+            left: -14px;
+            border-radius: 50px;
+            background-color: $separator;
+        }
+        &__email {
+            padding: 10px 0 0 5px;
+        }
+        &__copy {
+            padding: 28px 0 0 8px;
+            width: 500px;
+        }
+    }
+    @media (min-width: 991px) {
+        padding-bottom: 40px;
+        &__block {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__copy {
+            width: 100%;
+            padding: 30px 0 0 0;
+            align-self: flex-end;
+        }
+    }
+    @media (min-width: 1200px) {
+        &::before {
+            width: calc(100% - 120px);
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.h3-title {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    &_white {
+        color: $white;
+        opacity: .5;
+        position: relative;
+    }
+    &_white::after {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        left: 81px;
+        top: 4px;
+        border-top: 2px solid $white;
+        border-right: 2px solid $white;
+        transform: rotate(45deg);
+    }
+    &_blue {
+        color: $active;
+        position: relative;
+    }
+    &_blue::after {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        top: 4px;
+        margin-left: 4px;
+        border-top: 2px solid $active;
+        border-right: 2px solid $active;
+        transform: rotate(45deg);
+    }
+    &:hover {
+        color: $red;
+    }
+    &:hover:after {
+        border-top: 2px solid $red;
+        border-right: 2px solid $red;
+    }
+}

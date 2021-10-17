@@ -1,0 +1,51 @@
+.service-form {
+    font-family: "TT Norms", "Times New Roman", serif;
+    width: 527px;
+    position: absolute;
+    ////left: 50%;
+    ////top: 50%;
+    background-color: $main-blue;
+    &__body {
+        background-color: $grey;
+        border-radius: 12px;
+        padding: 0 0 20px 20px;
+    }
+    &__body-name {
+        font-family: "TT Norms", "Times New Roman", serif;
+        width: 487px;
+        height: 47px;
+        font-size: 18px;
+        line-height: 26px;
+        color: $text;
+        border-radius:6px;
+        border: none;
+        padding: 5px;
+    }
+    &__body-text {
+        font-family: "TT Norms", "Times New Roman", serif;
+        width: 487px;
+        height: 180px;
+        font-size: 18px;
+        line-height: 26px;
+        color: $text;
+        border-radius:6px;
+        border: none;
+    }
+    &__btn {
+        width: 250px;
+        padding: 16px 43px;
+    }
+    &__title {
+        margin-bottom: 10px;
+    }
+    &__title-h3 {
+        font-family: "TT Norms", "Times New Roman", serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+}

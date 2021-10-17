@@ -1,0 +1,171 @@
+.header {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 19px;
+    }
+    &__logo-box {
+        display: flex;
+        margin-top: 70px;
+    }
+    &__logo-box_about {
+        margin-top: 24px;
+    }
+    &__logo {
+        display: block;
+        padding-left: 7px;
+    }
+    &__logo_about {
+        padding-left: 0;
+    }
+    &__bread {
+        text-decoration: none;
+        position: relative;
+        margin-left: 13px;
+    }
+    &__bread-title {
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 22px;
+        color: $main-blue;
+        margin: 0;
+    }
+    &__bread-title_white {
+        color: $white;
+    }
+    &__bread-title::before {
+        content: url("../img/bread-left-mb.svg");
+        position: absolute;
+        left: -12px;
+    }
+    &__bread-title::after {
+        content: url("../img/bread-right-mb.svg");
+        position: absolute;
+    }
+    &__top-lang {
+        padding-left: 2px;
+        list-style: none;
+        display: flex;
+        margin: 0;
+    }
+    &__lang-button {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 1px;
+        color: $text;
+        padding: 5px 5px;
+    }
+    &__lang-button:hover,
+    &__lang-button:focus,
+    {
+        padding: 5px 5px;
+        background-color: $bg-alt;
+        border-radius: 8px;
+    }
+    &__lang-button-red {
+        background-color: $red;
+        padding: 5px 5px;
+        border-radius: 8px;
+        color: $white;
+    }
+    &__top-fb {
+        display: none;
+        fill: $white;
+    }
+    &__top-fb:hover {
+        fill: $red;
+    }
+    &__logo-link {
+        display: block;
+        width: 79px;
+    }
+    @media (min-width: 768px) {
+        &__logo {
+            padding-left: 0;
+            margin-top: 25px;
+        }
+        &__logo-link {
+            display: block;
+            width: 155px;
+        }
+        &__top-lang {
+            padding-left: 0;
+        }
+        &__top-fb {
+            display: block;
+            position: relative;
+            right: 146px;
+        }
+        &__bread-title {
+            padding-top: 24px;
+            padding-left: 26px;
+            font-size: 38px;
+            line-height: 45px;
+        }
+        &__bread-title::before {
+            content: url("../img/bread-left.svg");
+            left: 0;
+        }
+        &__bread-title::after {
+            content: url("../img/bread-right.svg");
+            right: -44%;
+        }
+        &__logo-box {
+            margin-top: 1px;
+        }
+    }
+    @media (min-width: 991px) {
+        &__top {
+            justify-content: flex-end;
+        }
+        &__top-fb {
+            display: block;
+            right: 0;
+        }
+        &__top-lang {
+            padding-right: 75px;
+        }
+        &__logo {
+            width: 155px;
+            display: block;
+            padding-top: 0;
+            position: relative;
+            margin: 0;
+        }
+        &__bread-title {
+            padding-top: 0;
+        }
+    }
+    @media (min-width: 1200px) {
+        &__top {
+            padding-top: 42px;
+        }
+        &__logo {
+            margin: 0;
+            top: -25px;
+        }
+        &__bread-title {
+            padding: 0;
+        }
+        &__bread {
+            position: relative;
+            top: -25px;
+            margin-left: 21px;
+        }
+        &__bread-title::before {
+            content: url("../img/bread-left.svg");
+            left: -17px;
+        }
+        &__bread-title::after {
+            content: url("../img/bread-right.svg");
+            right: -42px;
+        }
+    }
+    &__top-fb_grey {
+        fill: $text;
+    }
+}

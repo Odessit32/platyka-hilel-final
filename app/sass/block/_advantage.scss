@@ -1,0 +1,111 @@
+.advantage {
+    padding: 53px 0 46px 0;
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &__item {
+        align-self: center;
+    }
+    &__box-h3 {
+        color: $red;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding-bottom: 9px;
+        margin: 0;
+    }
+    &__box-h3:nth-child(n+2) {
+        display: none;
+    }
+    &__box-h2 {
+        color: $white;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 26px;
+        padding-bottom: 16px;
+        margin: 0;
+    }
+    &__box-text {
+        max-width: 330px;
+        font-weight: normal;
+        line-height: 26px;
+        color: $white;
+        margin: 0;
+    }
+    @media (min-width: 480px) {
+        &__box {
+            justify-content: center;
+        }
+        &__box-text {
+            max-width: 430px;
+        }
+    }
+    @media (min-width: 767px) {
+        &__box {
+            justify-content: center;
+        }
+    }
+    @media (min-width: 991px) {
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__item-left {
+        }
+        &__box-h3:nth-child(n+2) {
+            display: block;
+        }
+        &__box-h3 {
+            text-transform: none;
+            color: $text;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 40px;
+            text-align: right;
+            border-right: 4px solid $white;
+            padding-right: 40px;
+        }
+        &__box-h3:hover {
+            color: $red;
+        }
+        &__box-h3_current {
+            color: $red;
+            border-right: 4px solid $red;
+        }
+        &__dots {
+            display: none;
+        }
+        &__item-right {
+            padding-left: 40px;
+        }
+    }
+    @media (min-width: 1200px) {
+        padding-bottom: 67px;
+        &__box {
+            justify-content: space-between;
+        }
+        &__box-h3 {
+            width: 568px;
+            font-size: 42px;
+            line-height: 50px;
+            padding-right: 36px;
+            padding-top: 6px;
+            padding-bottom: 14px;
+        }
+        &__box-h2 {
+            width: 600px;
+            font-size: 32px;
+            line-height: 38px;
+        }
+        &__box-text {
+            max-width: 600px;
+            font-size: 21px;
+            line-height: 30px;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.maintenance {
+    padding-top: 4px;
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 4px solid $separator;
+        margin-bottom: 19px;
+    }
+    &__top-icon {
+        padding: 12px 14px;
+        border-radius: 24px;
+        margin-bottom: 20px;
+    }
+    &__text {
+        line-height: 26px;
+        color: $white;
+        margin: 21px 0 0 0;
+    }
+    &__btn {
+        margin: 37px 0 38px;
+        padding: 17px 22px;
+    }
+    &__bottom-title {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: $white;
+        margin: 0;
+        padding-bottom: 11px;
+    }
+    &__bottom-list {
+        margin: 0;
+        padding: 0 0 0 25px;
+        list-style-type: none;
+    }
+    &__bottom-li {
+        font-size: 17px;
+        line-height: 26px;
+        color: $white;
+        position: relative;
+        padding-bottom: 15px;
+    }
+    &__bottom-li::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        background-color: $red;
+        border-radius: 50%;
+        position: absolute;
+        left: -14px;
+        top: 11px;
+    }
+    @media (min-width: 768px) {
+        padding-top: 40px;
+    }
+    @media (min-width: 992px) {
+        padding-top: 4px;
+        &__top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 40px;
+        }
+        &__text {
+            max-width: 830px;
+            text-align: center;
+            font-size: 21px;
+            line-height: 30px;
+        }
+        &__btn {
+            position: relative;
+            left: 130px;
+        }
+        &__bottom {
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 64px;
+        }
+        &__bottom-title {
+            font-size: 24px;
+            line-height: 28px;
+            flex-basis: 100%;
+            padding-bottom: 20px;
+        }
+        &__bottom-list {
+            width: 50%;
+        }
+        &__bottom-li {
+            font-size: 17px;
+            line-height: 26px;
+            color: $white;
+            position: relative;
+            padding-bottom: 15px;
+        }
+    }
+}
