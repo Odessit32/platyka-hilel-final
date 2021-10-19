@@ -24,20 +24,12 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
     position: relative;
     scroll-behavior: smooth;
+    z-index: -5;
     &_white {
         color: $white;
     }
     &_black {
         color: $black;
-    }
-    &__service {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 500px;
-        object-fit: cover;
-        object-position: 50% 50%;
-        z-index: -1;
     }
 }
 .wrapper {
@@ -55,6 +47,22 @@ input[type="radio"].visually-hidden {
     position: relative;
     background-repeat: no-repeat;
     background-size: 100%;
+    z-index: -2;
+    &__bg {
+        position: absolute;
+        left: 0;
+        top: -157px;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: 50% 50%;
+        z-index: -1;
+    }
+    @media (min-width: 768px) {
+        &__bg {
+            top: -196px;
+        }
+    }
 }
 .wrapper-bottom::after,
 .wrapper-bottom::before,
@@ -90,10 +98,15 @@ input[type="radio"].visually-hidden {
     min-width: 375px;
     margin: 0 auto;
     padding: 0 20px;
+    z-index: 1;
     @media (min-width: 768px) {
         padding: 0 40px;
     }
     @media (min-width: 1100px) {
         padding: 0;
     }
+}
+.main {
+    position: relative;
+    z-index: -3;
 }

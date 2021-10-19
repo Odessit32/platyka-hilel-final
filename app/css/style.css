@@ -49,6 +49,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   position: relative;
   scroll-behavior: smooth;
+  z-index: -5;
 }
 
 .body_white {
@@ -57,18 +58,6 @@ input[type="radio"].visually-hidden {
 
 .body_black {
   color: #000000;
-}
-
-.body__service {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
-  z-index: -1;
 }
 
 .wrapper {
@@ -88,6 +77,26 @@ input[type="radio"].visually-hidden {
   position: relative;
   background-repeat: no-repeat;
   background-size: 100%;
+  z-index: -2;
+}
+
+.wrapper-bottom__bg {
+  position: absolute;
+  left: 0;
+  top: -157px;
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .wrapper-bottom__bg {
+    top: -196px;
+  }
 }
 
 .wrapper-bottom::after,
@@ -133,6 +142,7 @@ input[type="radio"].visually-hidden {
   min-width: 375px;
   margin: 0 auto;
   padding: 0 20px;
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
@@ -145,6 +155,11 @@ input[type="radio"].visually-hidden {
   .container-min {
     padding: 0;
   }
+}
+
+.main {
+  position: relative;
+  z-index: -3;
 }
 
 .abr {
